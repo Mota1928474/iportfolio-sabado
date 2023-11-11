@@ -24,15 +24,58 @@
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="css/estilo.css">    
 
-
-
 </head>
 <body>
     
+   <!--botao para alernar a navegação mobile --> 
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- Cabeçalho === HEADER -->
+    <header id="header">
+            <div class="d-flex flex-column"> <!-- div flex -->
+
+                <div class="profile"> <!-- profile -->
+                    <img src="img/Perfil.jpg" alt="" class="img-fluid rounded-circle">
+                    <h1 class="text-light"> Victor Rossati </h1>
+
+                    <div class="social-links mt-3 text-center"> <!-- Social Links -->
+
+                        <a href="#" class="instagram"> <i class="bx bxl-instagram"> </i> </a>
+                        <a href="#" class="facebook"> <i class="bx bxl-facebook"> </i> </a>
+
+                    </div> <!-- fim social links -->
+                </div> <!-- fim profile-->
+
+                <nav id="navbar" class="nav-menu navbar">
+                    <ul>
+                        <li> <a href="#hero" class="nav-link scrollto active"> <i class="bx bx-home"> </i> <span> Inicio </span> </a></li>
+
+                        <li> <a href="#about" class="nav-link scrollto"> <i class="bx bx-user"> </i> <span> Sobre </span> </a></li>
+
+                        <li> <a href="#resume" class="nav-link scrollto"> <i class="bx bx-file-blank"> </i> <span> Resumo </span> </a></li>
+
+                        <li> <a href="#portfolio" class="nav-link scrollto"> <i class="bx bx-book-content"> </i> <span> Portfolio </span> </a></li>
+
+                        <li> <a href="#services" class="nav-link scrollto"> <i class="bx bx-server"> </i> <span> Serviços </span> </a></li>
+
+                        <li> <a href="#contact" class="nav-link scrollto"> <i class="bx bx-envelope"> </i> <span> Contato  </span> </a></li>
 
 
+                    </ul>
+                </nav>
 
+            </div> <!-- fim div flex -->
+    </header>    <!-- FIM Cabeçalho-->
 
+     <!-- começo HERO --> 
+     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">  
+        <div class="hero-container" data-aos="fade-in"> <!-- container -->
+<h1> nome amigo</h1>
+<p> Eu sou 
+<span class="typed" data-typed-items="Cozinheiro, Jogador">
+    </span> </p>
+         </div> <!-- fim container -->
+     </section> <!-- fim HERO -->
 
 
     <script src="validador/purecounter/purecounter_vanilla.js"></script>
@@ -46,6 +89,6 @@
     
     <!-- JS principal -->
     <script src="js/main.js"></script>
-    
+
 </body>
 </html>
