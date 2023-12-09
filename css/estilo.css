@@ -2,10 +2,10 @@
 
 body{
     font-family: "Open Sans", sans-serif;
-    color: #2e89e4;
+    color: #272829;
 }
 a {
-    color: #2e89e4;
+    color: #149ddd;
     text-decoration: none;
 }
 a:hover{
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Raleway" sans-serif;
 }
 /*======== botão back to top ======== */
 .back-to-top{
@@ -31,12 +31,12 @@ h6 {
     background: #149ddd;
     width: 40px;
     height: 40px;
-
+    border-radius: 50px;
     transition: all 0,4s;
 }
 .back-to-top i{
     font-size: 28px;
-    color: #e62c2c;
+    color: #fff;
     line-height: 0;
 }
 .back-to-top:hover{
@@ -255,7 +255,7 @@ section{
     overflow: hidden;
 }
 .section-bg{
-    background: #f5f8f5;
+    background: #ccc;
 }
 .section-title {
     padding-bottom: 30px;
@@ -508,4 +508,177 @@ section{
 .portfolio .portfolio-wrap:hover .portfolio-links{
     opacity: 1;
     bottom: 0;
+}
+/* Portfolio Detalhes / Certificados  */
+.portfolio-details {
+    padding-top: 40px;
+}
+.portfolio-details .portfolio-details-slider img{
+    width: 100%;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 1;
+    border: 1px solid #149ddd;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination.swiper-pagination-bullet-active {
+    background: #173b6c;
+}
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(5, 13, 24, 0.08);
+}
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+;.portfolio-details .portfolio-info ul li+li {
+    margin-top: 30px;
+}
+.portfolio-details .portfolio-description {
+    padding-top: 30px;
+}
+.portfolio-details .portfolio-description h2{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.portfolio-details .portfolio-description p {
+    padding: 0;
+}
+/* Fim */
+/* nav-estrutural */
+.nav-estrutural {
+    padding: 20px 0;
+    background: #a6acb6;
+}
+.nav-estrutural h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+.nav-estrutural ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.nav-estrutural ol li+li::before{
+    display: inline-block;
+    padding-left: 10px;
+    color: #122f57;
+    content: "/";
+}
+@media (max-width: 768px) {
+    .nav-estrutural .d-flex {
+        display: block !important;
+    }
+    .nav-estrutural .ol {
+        display: block;
+    }
+    .nav-estrutural ol li {
+        display: inline-block;
+    }
+}
+/* ============== */
+/* Serviços */
+.services .icon-box {
+    margin-bottom: 20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 60%;
+    background: #149ddd;
+    transition: 0.9s;
+    border: 1px solid #1f5297;
+}
+.services .icon i {
+    color: #fff;
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon {
+    background: #cec4c3;
+}
+.services .icon-box:hover .icon i {
+    color: #149ddd;
+}
+.services .title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2eafec;
+}
+.services .title:hover {
+    color: white;
+    transition: 0.3s;
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #149ddd;
+}
+
+
+/* fim serviços */
+/* ============== */
+/* Avaliações */
+
+
+
+/* Fim avaliações */
+/* ============== */
+/* Contatos */
+
+/* fim contatos */
+
+/* Roda pé */
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background: #040b14;
+}
+#footer .copyright {
+    text-align: center;
+}
+#footer .creditos {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #2eafec;
+}
+@media (max-width: 1199px) {
+    #footer {
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
 }
